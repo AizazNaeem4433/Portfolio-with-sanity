@@ -15,10 +15,12 @@ import github from "../../../public/tech-icons/github.svg";
 import slack from "../../../public/tech-icons/slack.svg";
 import insta from "../../../public/insta.svg";
 import linkedin from "../../../public/linkedin.svg";
-
+import shadcn from "../../../public/tech-icons/shadcn-ui-seeklogo.svg"
+import supabase from "../../../public/tech-icons/supabase-seeklogo.svg"
+import sanity from "../../../public/tech-icons/sanity-seeklogo.svg"
 import { Button } from "@/components/ui/button";
 
-const icons = [canva, chatgpt, framer, github, slack];
+const icons = [canva, chatgpt, framer, github, slack, shadcn, sanity, supabase];
 
 const socialMedia = [
   {

@@ -18,8 +18,8 @@ export const navigationItems = [
     href: "/",
   },
   {
-    name: "Skills",
-    href: "/skills",
+    name: "About",
+    href: "/about",
   },
   {
     name: "Projects",
@@ -39,7 +39,7 @@ export default function Navbar() {
         </Link>
       </div>
 
-      <div className="hidden sm:flex justify-center items-center col-span-6">
+      <div className="hidden sm:flex justify-center items-center col-span-6 font-semibold">
         <NavigationMenu>
           <NavigationMenuList>
             {navigationItems.map((item, index) => (
