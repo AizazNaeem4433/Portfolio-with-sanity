@@ -7,6 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
+import square from "../../../public/square.svg";
 import canva from "../../../public/tech-icons/canva.svg";
 import chatgpt from "../../../public/tech-icons/chatgpt.svg";
 import framer from "../../../public/tech-icons/framer.svg";
@@ -45,17 +46,19 @@ const socialMedia = [
 
 export function SectionTwo() {
   return (
-    <div className="container mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
-      {/* Empty Placeholder */}
-      <div className="hidden lg:block"></div>
-
-      {/* Main Content */}
-      <div className="col-span-1 lg:col-span-2 flex flex-col gap-8">
-        {/* Stack Section */}
+    <div className="grid gird-cols-1 lg:grid-cols-3 gap-4 mt-10">
+      <div className="w-full relative col-span-1">
+        <Image
+          src={square}
+          alt="square"
+          className="w-full h-full object-cover rounded-2xl"
+        />
+      </div>
+      <div className="flex flex-col w-full col-span-1 lg:col-span-2 gap-4">
         <Card className="bg-gray-100 border-none">
           <CardHeader>
             <CardTitle>Explore my stack</CardTitle>
-            <CardDescription>Check out the tools I use daily</CardDescription>
+            <CardDescription>Check out the tools i use daily</CardDescription>
           </CardHeader>
           <CardContent className="flex flex-wrap gap-4">
             {icons.map((item, index) => (
@@ -64,8 +67,7 @@ export function SectionTwo() {
           </CardContent>
         </Card>
 
-        {/* Social Media Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 w-full gap-4">
           {socialMedia.map((item) => (
             <Card
               key={item.id}
