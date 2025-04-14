@@ -16,7 +16,8 @@ async function getData() {
   const data = await client.fetch(query, {}, { next: { revalidate: 30 } });
 
   return data;
-}
+} 
+
 
 export default async function ProjectsPage() {
   const data: ProjectsCard[] = await getData();
