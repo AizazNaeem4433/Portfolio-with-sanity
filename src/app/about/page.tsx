@@ -63,12 +63,14 @@ const About: React.FC = () => {
       <section className="flex flex-col md:flex-row items-center md:items-stretch justify-center gap-10 px-10 py-16 bg-[#f7f9fc] animate-fade-in">
         {/* Left Message with gradient heading */}
         <div className="flex-1 flex flex-col justify-center animate-slide-up">
-          <h4 className="text-2xl font-bold mb-5 bg-gradient-to-r from-gray-500 to-blue-700 text-transparent bg-clip-text">
-            Let's contact to start an Awesome journey.
-          </h4>
-          <p className="text-[#555]">
-            Feel free to reach out via this form. I'll get back to you as soon as possible!
-          </p>
+        <h4 className="text-2xl font-bold mb-5 bg-gradient-to-r from-gray-500 to-blue-700 text-transparent bg-clip-text">
+  Let&apos;s contact to start an Awesome journey.
+</h4>
+
+<p className="text-[#555]">
+  Feel free to reach out via this form. I&apos;ll get back to you as soon as possible!
+</p>
+
         </div>
 
         {/* Contact form */}
