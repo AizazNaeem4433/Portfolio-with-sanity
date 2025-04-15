@@ -10,6 +10,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        royalblue: '#4169e1',
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

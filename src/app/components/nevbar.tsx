@@ -33,9 +33,10 @@ export default function Navbar() {
     <nav className="max-w-7xl mx-auto px-5 md:px-8 py-6 grid grid-cols-12">
       <div className="col-span-6 flex md:col-span-3">
         <Link href="/">
-          <h1 className="text-3xl font-semibold">
-            Aizaz <span className="text-blue-500">Naeem</span>
-          </h1>
+        <h1 className="text-3xl font-semibold">
+  Aizaz <span className="bg-gradient-to-r from-black to-royalblue bg-clip-text text-transparent">Naeem</span>
+</h1>
+
         </Link>
       </div>
 
@@ -59,9 +60,11 @@ export default function Navbar() {
       </div>
 
       <div className="flex items-center justify-end md:col-span-3 col-span-6">
-        <Button className="hidden sm:flex" asChild>
-          <a href="mailto:jan@alenix.de">Contact Me</a>
-        </Button>
+      <Button className="hidden sm:flex bg-gradient-to-r from-black to-royalblue text-white hover:from-royalblue hover:to-black px-4 py-2 rounded-lg" asChild>
+  <a href="mailto:m.aizaz1st@gmail.com">Contact Me</a>
+</Button>
+
+
         <div className="sm:hidden">
           <MobileMenu />
         </div>
